@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Рецепты</string>
+    <string name="item1">Создать</string>
+    <string name="item2">По возрастанию</string>
+    <string name="item3">По убыванию</string>
+    <string name="item4">Обновить</string>
+</resources>

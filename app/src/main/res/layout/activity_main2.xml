@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Название рецепта"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/nameet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nametv"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/cattv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Категория"
+        app:layout_constraintTop_toBottomOf="@id/nameet"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/catet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cattv"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ingtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ингредиенты"
+        app:layout_constraintTop_toBottomOf="@id/catet"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/inget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ingtv"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/rectv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рецепт приготовления"
+        app:layout_constraintTop_toBottomOf="@id/inget"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/recet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rectv"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/timetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Время приготовления"
+        app:layout_constraintTop_toBottomOf="@id/recet"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/timeet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/timetv"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/createb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создать рецепт"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timeet"
+        android:onClick="SaveRecipe"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
